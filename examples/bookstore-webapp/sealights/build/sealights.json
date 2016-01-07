@@ -1,0 +1,9 @@
+{
+	"server": "https://prod-eu-a-gw.sealights.co/api",
+	"interval": 10000,
+	"enabled": true,
+	"customerId": "JerseyBookstore",
+	"javaHome": "/usr/",
+	"jar": "java-build-agent-1.0.0-SNAPSHOT-jar-with-dependencies.jar",
+	"javaClassPrefix": "org/glassfish/jersey/examples/bookstore/webapp"
+}

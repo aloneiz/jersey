@@ -73,6 +73,14 @@
             <artifactId>jstl</artifactId>
             <version>${jstl.version}</version>
         </dependency>
+
+	<!-- Sealights Agent -->
+	<dependency>
+		<groupId>io.sealights.on-premise.agents</groupId>
+		<artifactId>java-agent-api</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+		<scope>test</scope>
+	</dependency> 
     </dependencies>
 
     <build>
@@ -110,7 +118,21 @@
                                 <jersey.config.test.container.factory>${external.container.factory}</jersey.config.test.container.factory>
                                 <jersey.config.test.container.port>${external.container.port}</jersey.config.test.container.port>
                             </systemPropertyVariables>
-                        </configuration>
+			    <additionalClasspathElements>						
+				<additionalClasspathElement>
+					${user.home}/.m2/repository/io/sealights/on-premise/agents/java-agent-api/1.0.0-SNAPSHOT/java-agent-api-1.0.0-SNAPSHOT.jar
+				</additionalClasspathElement>
+			    </additionalClasspathElements>
+			    <argLine>
+				-Dsl.log.enabled=true -javaagent:"${user.home}/.m2/repository/io/sealights/on-premise/agents/java-agent-core/1.0.0-SNAPSHOT/java-agent-core-1.0.0-SNAPSHOT.jar"
+			    </argLine>
+			    <properties>
+				<property>
+					<name>listener</name>				
+					<value>io.sealights.onpremise.agents.java.agent.api.SlTestListener</value>
+				</property>
+			    </properties>
+			</configuration>
                     </plugin>
                 </plugins>
             </build>

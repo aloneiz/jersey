@@ -29,3 +29,8 @@ nb-configuration.xml
 # Maven plugins noise
 dependency-reduced-pom.xml
 pom.xml.versionsBackup
+
+*.log
+node_modules/
+*mapping*.json
+*.jar

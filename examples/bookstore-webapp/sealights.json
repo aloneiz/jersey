@@ -1,0 +1,10 @@
+{
+	"customerId": "JerseyBookstore",
+	"appName": "Bookstore",
+	"server": "https://prod-eu-a-gw.sealights.co/api",
+ 	"interval": 20000,
+ 	"enabled": true,
+ 	"environmentName": "Bookstore Test ENV",
+ 	"maxQueueSize": 1,
+ 	"instrumentedPackages":["org.glassfish.jersey.examples.bookstore.webapp"]
+}
