@@ -76,7 +76,8 @@ public class Bookstore {
         getItems().put("3", new CD("Ma Vlast 1", "Bedrich Smetana", new Track[] {
                 new Track("Vysehrad", 180),
                 new Track("Vltava", 172),
-                new Track("Sarka", 32)}));
+                new Track("Sarka", 32),
+		new Track("Dog", 320)}));
     }
 
     @Path("items/{itemid}/")
