@@ -77,7 +77,7 @@ public class Bookstore {
                 new Track("Vysehrad", 180),
                 new Track("Vltava", 172),
                 new Track("Sarka", 32),
-                new Track("Cat6", 320)}));
+                new Track("Cat7", 320)}));
     }
 
     @Path("items/{itemid}/")
