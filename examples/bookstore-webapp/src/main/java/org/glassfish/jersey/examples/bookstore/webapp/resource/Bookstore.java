@@ -115,7 +115,7 @@ public class Bookstore {
         this.name = name;
     }
 
-    public void setNameAlon3(String name) {
+    public void setNameAlon4(String name) {
         this.name = name;
     }
 
