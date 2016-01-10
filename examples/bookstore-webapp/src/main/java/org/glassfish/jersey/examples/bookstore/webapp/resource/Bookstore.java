@@ -77,7 +77,7 @@ public class Bookstore {
                 new Track("Vysehrad", 180),
                 new Track("Vltava", 172),
                 new Track("Sarka", 32),
-                new Track("Cat2", 320)}));
+                new Track("Cat4", 320)}));
     }
 
     @Path("items/{itemid}/")
@@ -114,4 +114,9 @@ public class Bookstore {
     public void setName(String name) {
         this.name = name;
     }
+
+    public void setNameAlon2(String name) {
+        this.name = name;
+    }
+
 }
